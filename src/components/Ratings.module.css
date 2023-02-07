@@ -7,6 +7,7 @@
     padding: 2rem;
     max-width: 350px;
     color: var(--white);
+    margin: 0 2rem;
 }
 
 .description {
@@ -49,6 +50,7 @@
     color: var(--white);
     border-radius: 5rem;
     background-color: var(--primary);
+    letter-spacing: 0.15rem;
 }
 
 #submit:hover,#submit:focus  {
@@ -66,3 +68,25 @@
 #star:hover {
     background-color: var(--dark-grey);
 }
+
+#rating {
+    color: var(--primary);
+    width: fit-content;
+    border-radius: 5rem;
+    height: unset;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 1rem 0;
+}
+
+#rating:hover {
+    background-color: var(--dark-grey);
+}
+
+@media only screen and (max-width: 375px) {
+    .btn {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
