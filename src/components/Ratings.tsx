@@ -45,7 +45,7 @@ export function Ratings() {
 
   function Thanks() {
     return (
-      <>
+      <div className={styles.center}>
         <div>
           <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
             <g fill="none">
@@ -145,7 +145,7 @@ export function Ratings() {
           We appreciate you taking the time to give a rating. If vou ever need
           more support. don't hesitate to get in touch!
         </p>
-      </>
+      </div>
     );
   }
   return (

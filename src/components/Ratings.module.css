@@ -1,92 +1,104 @@
+.container,
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--white);
+  margin: 0 2rem;
+}
+
 .container {
-    background-color: var(--dark-blue);
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 2rem;
-    max-width: 350px;
-    color: var(--white);
-    margin: 0 2rem;
+  background-color: var(--dark-blue);
+  border-radius: 25px;
+  padding: 2rem;
+  max-width: 350px;
 }
 
 .description {
-    color: var(--medium-grey);
-    font-size: 15px;
-    font-weight: 400;
+  color: var(--medium-grey);
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .btnContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 1.2rem;
-    margin: 0.75rem 0;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  margin: 0.75rem 0;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .btn {
-    all: unset;
-    width: 2.2rem;
-    height: 2.2rem;
-    border-radius: 50%;
-    background-color: var(--dark-grey);
-    color: var(--medium-grey);
-    padding: 0.5rem;
-    text-align: center;
+  all: unset;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-color: var(--dark-grey);
+  color: var(--medium-grey);
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .btn:hover {
-    background-color: var(--primary);
-    color: var(--white);
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 .btn:focus {
-    background-color: var(--medium-grey);
-    color: var(--white);
+  background-color: var(--medium-grey);
+  color: var(--white);
 }
 
 #submit {
-    width: unset;
-    color: var(--white);
-    border-radius: 5rem;
-    background-color: var(--primary);
-    letter-spacing: 0.15rem;
+  width: unset;
+  color: var(--white);
+  border-radius: 5rem;
+  background-color: var(--primary);
+  letter-spacing: 0.15rem;
 }
 
-#submit:hover,#submit:focus  {
-    background-color: var(--white);
-    color: var(--primary);
+#submit:hover,
+#submit:focus {
+  background-color: var(--white);
+  color: var(--primary);
 }
 
 #star {
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #star:hover {
-    background-color: var(--dark-grey);
+  background-color: var(--dark-grey);
 }
 
 #rating {
-    color: var(--primary);
-    width: fit-content;
-    border-radius: 5rem;
-    height: unset;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin: 1rem 0;
+  color: var(--primary);
+  width: fit-content;
+  border-radius: 5rem;
+  height: unset;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 1rem 0;
 }
 
 #rating:hover {
-    background-color: var(--dark-grey);
+  background-color: var(--dark-grey);
 }
 
 @media only screen and (max-width: 375px) {
-    .btn {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
+  .btn {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
